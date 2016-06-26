@@ -1,0 +1,24 @@
+{
+  "name": "learning-math",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express-handlebars": "^3.0.0",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toreerstad/learning-math.git"
+  },
+  "author": "Tore Erstad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toreerstad/learning-math/issues"
+  },
+  "homepage": "https://github.com/toreerstad/learning-math#readme"
+}
