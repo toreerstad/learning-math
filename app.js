@@ -10,8 +10,10 @@ let handlebars = require('express-handlebars').create({defaultLayout: 'main'});
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 
+app.use(express.static(__dirname + '/public'));
+
 app.get('/', (req, res) => {
-  res.render('home');
+  res.render('home', { indexes: [1,2,3,4,5,6,7,8,9,10]});
 });
 
 app.use((req, res) => {

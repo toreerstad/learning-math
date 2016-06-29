@@ -1,1 +1,41 @@
-<h1>Her kommer "Lær matte"</h1>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="container">
+        <div class="row">
+          <div class="dropdown col-xs-6 col-sm-2">
+            <button id="math-type" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Pluss <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="math-type">
+              <li><a href="#">Pluss</a></li>
+              <li><a href="#">Minus</a></li>
+              <li><a href="#">Multiplikasjon</a></li>
+              <li><a href="#">Divisjon</a></li>
+            </ul>
+          </div>
+          <div class="dropdown col-xs-6 col-sm-2">
+            <button id="math-skill" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Enkelt <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="math-skill">
+              <li><a href="#">Enkelt</a></li>
+              <li><a href="#">Middels</a></li>
+              <li><a href="#">Vanskelig</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="margin-top: 10px;">
+    {{#each indexes}}
+      <div class="row">
+        <span id="left{{@this}}" class="left col-xs-3 col-sm-1"></span>
+        <span id="sign{{@this}}" class="sign col-xs-1 col-sm-1"></span>
+        <span id="right{{@this}}" class="right col-xs-3 col-sm-1"></span>
+        <input id="input{{@this}}" type="text" class="col-xs-3 col-sm-2" {{#if @first}} autofocus {{/if}}/>
+      </div>
+    {{/each}}
+  </div>
+</div>
